@@ -1,53 +1,53 @@
 class Account:
 
-def init (self)
-self.accno-int(input("enter the account
-self.name input("enter the accountant
-self.balance float(input("enter the
-def withdraw(self
-n float(input("enter the amount")
-self balance self.balance-n
-def deposit(self)
+       def __init__(self):
+          self.accno=int(input("enter the account"))
+          self.name=input("enter the accountant")
+          self.balance=float(input("enter the balance"))
 
-float(input("enter the amount"))
-self balance self.balance
-def showbalance(self)
+       def withdraw(self):
+            n=float(input("enter the amount")
+            self.balance=self.balance-n
 
-print(self.accno, self.name, self.balance)
+        def deposit(self):
+            m=float(input("enter the amount"))
+            self.balance=self.balance+m
 
-x=Account:
-y-Account()
-z int(input("select your account: 1.x 2.7">
-pif(z):
+        def showbalance(self):
+             print(self.accno,self.name,self.balance)
 
-c = int(input("enter the option : 1. withdraw 2.deposit 3.show balance >>
-if t):
-x-withdraw()
+x=Account()
+y=Account()
+z = int(input("select your account: 1.x 2.7"))
+if(z==1):
 
-elif (c= 2):
-x.deposit()
-elif (c=3) :
+    c = int(input("enter the option : 1. withdraw 2.deposit 3.show balance >>
+    if (c==1):
+      x.withdraw()
 
-X.showbalance()
-else:
+    elif (c= 2):
+      x.deposit() 
+    elif (c=3) :
+  x.showbalance()
+    else:
+  print("invalid option")
 
-print("invalid option")
-elif(z=2)
+elif(z==2):
 
-C int(input("enter the option : 1. withdraw 2. deposit 3.She
-if ( 1.)
+    c =int(input("enter the option : 1. withdraw 2. deposit 3.Showbalance")
+    if(c==1):
 
-y.withdraw()
+      y.withdraw()
 
-elif ( m2):
+    elif(c==2):
 
-y.d
-elif ( )
+      y.d
+    elif(c==3):
 
-y.showbalance()
-else:
+      y.showbalance()
+    else:
 
-print("invalid option")
-else:
+      print("invalid option")
+ else:
 
-print("invalid account")
+    print("invalid account")
