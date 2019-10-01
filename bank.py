@@ -21,7 +21,7 @@ y=Account()
 z = int(input("select your account: 1.x 2.7"))
 if(z==1):
 
-    c = int(input("enter the option : 1. withdraw 2.deposit 3.show balance >>
+    c = int(input("enter the option : 1. withdraw 2.deposit 3.show balance")
     if (c==1):
       x.withdraw()
 
