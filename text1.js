@@ -1,15 +1,12 @@
 // Get the HTML element that contains the customer input.
 const inputElement = document.getElementById('customer-input');
 
-// Get the value of the HTML element.
-const inputValue = inputElement.value;
-
 // Validate the input value.
-if (!/^[a-zA-Z]+$/.test(inputValue)) {
-  // Display an error message to the customer.
-  alert('The customer input must contain only letters.');
+const isValidInput = /^[a-zA-Z]+$/.test(inputElement.value);
 
-  // Prevent the customer from submitting the form.
+// If the input value is invalid, display an error message to the customer and prevent them from submitting the form.
+if (!isValidInput) {
+  alert('The customer input must contain only letters.');
   return false;
 }
 
