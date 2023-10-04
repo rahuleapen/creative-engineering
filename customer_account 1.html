@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account</title>
+</head>
+<body>
+
+  <h1>My Account</h1>
+
+  <div class="section">
+    <h3>Personal Information</h3>
+    <table border="1">
+      <tr>
+        <th>Name:</th>
+        <td>{{ customer.name }}</td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td>{{ customer.email }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>Shipping Address</h3>
+    <table border="1">
+      <tr>
+        <th>Address:</th>
+        <td>{{ customer.shipping_address }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>Billing Address</h3>
+    <table border="1">
+      <tr>
+        <th>Address:</th>
+        <td>{{ customer.billing_address }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h3>Order History</h3>
+    <table border="1">
+      <tr>
+        <th>Order ID</th>
+        <th>Date</th>
+        <th>Total</th>
+        <th>Status</th>
+      </tr>
+      {% for order in customer.order_history %}
+        <tr>
+          <td>{{ order.id }}</td>
+          <td>{{ order.date }}</td>
+          <td>{{ order.total }}</td>
+          <td>{{ order.status }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+</body>
+</html>
