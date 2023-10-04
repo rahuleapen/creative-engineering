@@ -1,15 +1,16 @@
 class Account:
 
 def init (self)
-self.accno-int(input("enter the account
-self.name input("enter the accountant
-self.balance float(input("enter the
+self.accno-int(input("enter the account Number ")
+                  
+self.name input("enter the accountant Details")
+self.balance float(input("enter the PIN ")
 def withdraw(self
 n float(input("enter the amount")
 self balance self.balance-n
 def deposit(self)
 
-float(input("enter the amount"))
+float(input("enter the amount")
 self balance self.balance
 def showbalance(self)
 
