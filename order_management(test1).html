@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Orders</title>
+</head>
+<body>
+
+  <h1>My Orders</h1>
+
+  <table border="1">
+    <tr>
+      <th>Order ID</th>
+      <th>Date</th>
+      <th>Total</th>
+      <th>Status</th>
+      <th>Shipping Address</th>
+      <th>Billing Address</th>
+      <th>Payment Method</th>
+      <th>Actions</th>
+    </tr>
+    {% for order in orders %}
+      <tr>
+        <td>{{ order.id }}</td>
+        <td>{{ order.date }}</td>
+        <td>{{ order.total }}</td>
+        <td>{{ order.status }}</td>
+        <td>{{ order.shipping_address }}</td>
+        <td>{{ order.billing_address }}</td>
+        <td>{{ order.payment_method }}</td>
+        <td>
+          <a href="/orders/view/{{ order.id }}">View Order</a>
+          <a href="/orders/cancel/{{ order.id }}">Cancel Order</a>
+          <a href="/orders/return/{{ order.id }}">Return Order</a>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+
+</body>
+</html>
