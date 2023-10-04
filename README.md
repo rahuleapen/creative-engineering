@@ -40,7 +40,3 @@ You can then visit the site in your web browser at http://localhost:8000/.
 Contributing
 
 If you are interested in contributing to this project, please take a look at the project's contribution guidelines. They will provide you with more information on how to get started.
-
-License
-
-This project is licensed under the MIT license.
